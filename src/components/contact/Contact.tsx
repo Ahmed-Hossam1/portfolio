@@ -9,7 +9,7 @@ import { Validation } from "../Validation/Validation";
 import Error from "../Error/Error";
 
 const Contact = () => {
-  const form = useRef();
+  const form = useRef<HTMLFormElement | null>(null);
   const [errors, setErrors] = useState({
     firstName: "",
     lastName: "",
@@ -32,21 +32,25 @@ const Contact = () => {
       return;
     }
 
+    if (!form.current) {
+      console.error("Form reference is not set!");
+      return;
+    }
+
     emailjs
-      .sendForm("service_qwf0yvj", "template_ofvo0fg", form.current, {
-        publicKey: "16v88YXOSnjk_IzN9",
+      .sendForm(
+        "service_qf0fyvj",
+        "template_ofvo8f6",
+        form.current,
+        "16v88YXOSnjk_IzN9"
+      )
+      .then(() => {
+        toast.success("Message sent successfully");
+        setTimeout(() => location.replace("/"), 1500);
       })
-      .then(
-        () => {
-          toast.success("Message sent successfully");
-          setTimeout(() => {
-            location.replace("/");
-          }, 1500);
-        },
-        (error) => {
-          toast.error("something went wrong", error);
-        }
-      );
+      .catch((error) => {
+        toast.error("Something went wrong", error);
+      });
   };
 
   return (
