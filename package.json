@@ -16,6 +16,7 @@
     "@tsparticles/engine": "^3.6.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.6.0",
+    "aos": "^3.0.0-beta.6",
     "lucide-react": "^0.460.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -31,6 +32,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
+    "@types/aos": "^3.0.7",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
