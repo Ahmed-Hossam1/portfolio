@@ -13,7 +13,6 @@ const Education_Courses = () => {
         key={idx}
         data-aos="fade-up"
         data-aos-duration="1200"
-        data-aos-delay={idx * 200}
         className="box  max-w-sm mx-auto md:max-w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-900 dark:border-gray-700 relative before:content[;] before:absolute before:left-0 before:top-0 before:w-0 before:h-full before:bg-gradient-to-r before:from-red-950 before:via-red-900  dark:before:hover:w-full before:transition-all before:duration-300 z-10 before:-z-10"
       >
         <div>
