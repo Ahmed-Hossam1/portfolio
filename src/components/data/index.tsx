@@ -190,6 +190,15 @@ export const projects_javaScript_List: IProjects[] = [
 
 export const projects_React_List: IProjects[] = [
   {
+  title: "Instrumentation & Dashboard Web Application",
+  desc: "A web-based dashboard for monitoring instrumentation and devices in industrial plants, with modules for equipment categories (e.g. transmitters, valves, switches), calibration, fault detection, and firefighting systems. Integrated data from facilities such as the Amerya LPG Recovery Plant and the Western Desert Gas Complex (WDGC). The system enables administrators to track device statuses, view plant performance metrics, manage alerts, and access detailed information for each instrumentation component in an intuitive interface.",
+  image: "./images/2025-11-23_19-53.png", // ممكن تغيّر الصورة لو عندك صورة مختلفة للمشروع
+  links: {
+    demo: "https://instrumentation-green.vercel.app/",
+    github: "https://github.com/Ahmed-Hossam1/instrumentation",
+  },
+},
+  {
     title: "Movie-App",
     desc: "movieo app is a modern website built with modern technologies like reactjs, tailwind, Router DOM ,daisyui the user can engaging with the website and see the movie detail, Tv series, search for secpic movie, see movie review and login or create an account ✨fully responsive design with tailwind css🎨 Enhanced with React Js and tailwind css",
     image: "./images/Screenshot (178).png",
@@ -198,6 +207,7 @@ export const projects_React_List: IProjects[] = [
       github: "https://github.com/Ahmed-Hossam1/Movie-App/tree/main",
     },
   },
+
   {
     title: "bonik-E-commerce",
     desc: " An innovative e-commerce platform built with React.js and styled using Tailwind CSS, designed to provide a seamless shopping experience with a clean, responsive, and visually appealing interface. Leveraging React.js for dynamic, fast-loading pages and Tailwind CSS for consistent, modern styling, this website offers users an intuitive browsing experience across all devices. The site’s efficient structure and aesthetic design make product discovery and purchase straightforward, enhancing the overall customer journey from browsing to checkout",
